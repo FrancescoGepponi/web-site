@@ -1,0 +1,422 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Heebo , sans-serif !important;
+        }
+
+
+    .logo > input{
+        display: none;
+    }
+
+    /*BARRA */
+    .barra-principale{
+        display: flex;
+        justify-content: space-around;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        min-width: fit-content;
+        position: absolute;
+        width: 100%;
+
+    }
+
+    .logo img{
+        width: 35%;
+    }
+
+
+    .barra-menu{
+        display: flex;
+        color: white;
+    }
+
+    .barra-menu > a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        padding: 24px 25px;
+    }
+
+    .barra-menu > a:hover{
+        color: orange;
+    }
+
+
+    .menu-mobile{
+        display:none;
+        right: -100%;
+    }
+
+
+    .castello_sfondo{
+        background: url("https://www.viaggiareconlentezza.com/wp-content/uploads/2017/05/chambord-chateau-france.adapt_.1190.1.jpg") fixed;
+        background-position: center center;
+        background-size: cover;
+        background-color: #3e3d3d;
+        background-blend-mode: multiply;
+        height: 100vh;
+    }
+
+    .bg-cover__title{
+        color: white;
+        position:absolute;
+        bottom:30%;
+        right:2%;
+        margin-top: 10rem;
+    }
+
+
+    .row { /* CONTENITORE FOTO CASTELLI */
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+        margin: 100px 80px 70px;
+      }
+      
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        cursor: pointer;
+        border: 2px solid white;
+      }
+
+      .column img:hover {
+        border: 2px solid black;
+      }
+
+
+
+    /* BOTTONE CON ANIMAZIONE */
+    .button--move{
+        display:inline-block;
+        width:fit-content;
+        background-color: #316bff;
+        padding: 8px 14px;
+        margin:15px;
+        animation: rotate_effect 5s infinite ease-in-out;
+        text-decoration: none;
+        color: white;
+        margin-top: 50%;
+    }
+
+    @keyframes rotate_effect{
+        0%{transform: rotate(0deg);}
+        20%{transform: rotate(0deg);}
+        40%{transform: rotate(10deg);}
+        60%{transform: rotate(-10deg);}
+        80%{transform: rotate(0deg);}
+        100%{transform: rotate(0deg);}
+    }
+
+        /* FOOTER */
+        .bigDiv{
+        background-color: black;
+        }
+
+        .footer{
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        bottom:0;
+        }
+
+        .col-footer{
+        margin: 70px 0;
+        padding: 10px;
+        }
+
+        .wow{
+        display: flex;
+        justify-content: space-around;
+        color:white;
+        margin: 0 10%;
+        }
+
+    .owo{
+        color:white;
+        display: flex;
+        justify-content: space-around;
+        height: 8vh;
+    }
+
+
+
+
+        @keyframes zum {
+            0% {
+            transform:scale(0);
+            }
+            100% {
+            transform:scale(1);
+            }
+        }
+
+
+        #nomeCastello{
+            color: white;
+            z-index: 99999;
+        }
+
+        .big-text{
+            font-size: 70px;
+            font-weight: 900;
+        }
+
+        /* QUI MODIFICO LA VELOCITA DELL'ANIMAZIONE */
+        .animate__fadeInUp {
+            --animate-duration: 2s;
+        }
+
+        #sfondoScuro {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9997;
+            background-color: rgb(0 0 0 / 84%);
+            position: fixed;
+            top: 0;
+            height: 55em;
+            width: 100%;
+        }
+        
+        #zoom{
+            display: none;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            z-index: 9999;
+            cursor: pointer;
+            animation-name: zum;
+            animation-duration: 1s;
+        }
+
+
+
+
+        @media screen and (min-width:768px) and (max-width:1200px){
+            .bg-cover__title h1 {
+                margin-right: 16px;
+                margin-bottom: -10%;
+            }
+        
+            #sfondoScuro {
+                height: 75em;
+            }
+
+
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+              }
+          
+              .row{
+                  margin: 100px 22px 15px;
+              }
+        
+            .button--move{
+                margin: -50px;
+                margin-top: 80%;
+            }
+
+        }
+
+
+
+
+    @media (max-width:767px){
+
+        .barra-principale{
+            position: fixed;
+            z-index: 9998;
+            background-color: black;
+            top:0 ;
+            left: 0;
+        }
+
+        .logo{
+            margin-right: 5em;
+            position: relative;
+        }
+
+        .logo img{
+                width: 30%;
+        }
+
+        .barra-menu{
+            display: none;
+        }
+
+        .menu-mobile{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            color: white;
+            z-index: 999999;
+            margin-top: 23%;
+            position: fixed;
+            transition: all 1s cubic-bezier(.215, .61, .355, 1);
+            display: block;
+        }
+
+        .menu-mobile-open{
+            right: 0%;
+            z-index: 999999;
+        }
+
+        .menu-mobile a{
+            display: block; /*COSI POSSO CLICCARE TUTTA LA RIGA COME LINK*/
+            text-decoration: none;
+            color: white;
+            font-size: 2.1rem;
+            padding: 1.1em;
+        }
+
+        .menu-mobile a:hover{
+            color: orange
+        }
+
+
+            .nav-icon{
+                display: inline-block;
+                position: relative;
+                left: 13.5em;
+                bottom:2.2em;
+            }
+
+            #primo{
+                display: block;
+                height: 4px;
+                width: 36px;
+                margin-top: 9px;
+                position: absolute;
+                background:white;
+                top: 30%;
+                left: 108%;
+            }
+
+            #primo::before , #primo::after{
+                display: block;
+                content: "";
+                background:white;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transition: all .2s ease-out;
+                top: -10px;
+            }
+
+            #primo::before{
+                top: 10px;
+            }
+
+            #primo::after{
+                top: -10px;
+            }
+
+
+            .menu-btn:checked ~ .hamburger #primo{
+
+                background-color: black;
+            }
+
+            .menu-btn:checked ~ .hamburger #primo::before{
+
+                /* È NECESSARIO SPECIFICARE LA CLASSE ".hamburger"
+                PERCHÈ LO SPAN CON ID "primo" NON È FRATELLO DELL'ELEMENTO input,
+                DATO CHE LO SPAN IN QUESTIONE È ALL'INTERNO DELL'ELEMENTO label */
+
+                    transform: rotate(-45deg);
+                    top:2px;
+                    transition: all .2s ease-out;
+                    background-color: white;
+            }
+
+            .menu-btn:checked ~ .hamburger #primo::after{
+                transform: rotate(45deg);
+                top:2px;
+                transition: all .2s ease-out;
+                background-color: white;
+        }
+
+
+
+        .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+          }
+      
+          .row{
+              margin: 100px 2px 15px;
+          }
+
+          #zoom{
+            width: 94%;
+            height: 50%;
+        }
+
+        .bg-cover__title h1 {
+            font-size: 60px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: -32%;
+        }
+
+
+
+
+        .footer{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col-footer{
+            font-size: 1.1rem;
+            padding:15px;
+            justify-content: center;
+
+            margin: 15px 0;
+        }
+
+        .wow{
+            display: block;
+            text-align: center;
+        }
+
+        .button--move{
+            margin-top: 5%;
+        }
+
+        .owo{
+            padding: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            display: block;
+            text-align: center;
+        }
+
+
+        .wow img{
+                width: 40%;
+            }
+
+
+}

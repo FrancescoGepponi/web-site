@@ -1,0 +1,389 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Heebo , sans-serif !important;
+        }
+
+
+    .logo > input{
+        display: none;
+    }
+
+    /*BARRA */
+    .barra-principale{
+        display: flex;
+        justify-content: space-around;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        min-width: fit-content;
+        position: absolute;
+        width: 100%;
+    }
+
+    .logo img{
+        width: 35%;
+    }
+
+
+    .barra-menu{
+        display: flex;
+        color: white;
+    }
+
+    .barra-menu > a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        padding: 24px 25px;
+    }
+
+    .barra-menu > a:hover{
+        color: orange;
+    }
+
+
+    .menu-mobile{
+        display:none;
+        right: -100%;
+    }
+
+    .cover__text{
+        position:absolute;
+        left:50%; 
+        top: 33%;
+        line-height: 1.6;
+    }
+
+    /* AREA DATI */
+    .info{
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 58px 35px;
+    }
+
+    .dati{
+        line-height: normal;
+        padding: 5px;
+    }
+
+    .dati p{
+        font-size: 23px;
+    }
+
+    .dati h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #formDiv{
+        margin: 0 21%;
+    }
+
+    form input{
+        width: 100%;
+        height: 35px;
+        background-color: #eee;
+        margin-top: 3px;
+        margin-right: 10px;
+        padding-left: 5px;
+        font-size: 18px;
+    }
+
+    form textarea{
+        margin-top: 3px;
+        min-height: 300px;
+        width: 100%; padding:10px;
+        background-color: #eee
+    }
+
+    form p{
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    form label{
+        font-weight: bold;
+    }
+
+
+
+    /* BOTTONI */
+    .button{
+        display: inline-block;
+        padding: 13px;
+        background: #316bff;
+        color:white;
+        text-decoration: none;
+        border-radius: 4px;    
+        position: relative;
+        font-size: 1rem;
+    }
+
+    .button:hover{
+        cursor: pointer;
+        background: #1649ca;
+        color: white;
+    }
+
+
+
+    /* BOTTONE CON ANIMAZIONE */
+    .button--move{
+        display:inline-block;
+        width:fit-content;
+        background-color: #316bff;
+        padding: 8px 14px;
+        margin:15px;
+        animation: rotate_effect 5s infinite ease-in-out;
+        text-decoration: none;
+        color: white;
+        margin-top: 50%;
+    }
+
+    @keyframes rotate_effect{
+        0%{transform: rotate(0deg);}
+        20%{transform: rotate(0deg);}
+        40%{transform: rotate(10deg);}
+        60%{transform: rotate(-10deg);}
+        80%{transform: rotate(0deg);}
+        100%{transform: rotate(0deg);}
+    }
+
+    /* FOOTER */
+    .bigDiv{
+        background-color: black
+    }
+
+    .footer{
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        bottom:0;
+    }
+
+    .col-footer{
+        margin: 70px 0;
+        padding: 10px;
+    }
+
+    .wow{
+        display: flex;
+        color:white;
+        justify-content: space-around;
+        margin: 0 10%;
+    }
+
+    .owo{
+        color:white;
+        display: flex;
+        justify-content: space-around;
+        height: 8vh;
+    }
+
+
+
+    @media screen and (min-width:768px) and (max-width:1080px){
+        form p , form label {
+
+            font-size: 20px;
+        }
+
+        .button{
+            font-size: 22px;
+        }
+
+        .button--move{
+            margin: -50px;
+            margin-top: 80%;
+        }
+
+    }
+
+
+    @media (max-width:767px){
+        .barra-principale{
+            position: fixed;
+            z-index: 9998;
+            background-color: black;
+            top:0 ;
+            left: 0;
+        }
+
+        .logo{
+            margin-right: 5em;
+            position: relative;
+        }
+
+        .logo img{
+                width: 30%;
+        }
+
+        .barra-menu{
+            display: none;
+        }
+
+        .menu-mobile{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            color: white;
+            z-index: 9999;
+            margin-top: 23%;
+            position: fixed;
+            transition: all 1s cubic-bezier(.215, .61, .355, 1);
+            display: block;
+        }
+
+        .menu-mobile-open{
+            right: 0%;
+            z-index: 9999;
+        }
+
+        .menu-mobile a{
+            display: block; /*COSI POSSO CLICCARE TUTTA LA RIGA COME LINK*/
+            text-decoration: none;
+            color: white;
+            font-size: 2.1rem;
+            padding: 1.1em;
+        }
+
+        .menu-mobile a:hover{
+            color: orange
+        }
+
+
+            .nav-icon{
+                display: inline-block;
+                position: relative;
+                left: 13.5em;
+                bottom:2.2em;
+            }
+
+            #primo{
+                display: block;
+                height: 4px;
+                width: 36px;
+                margin-top: 9px;
+                position: absolute;
+                background:white;
+                top: 30%;
+                left: 108%;
+            }
+
+            #primo::before , #primo::after{
+                display: block;
+                content: "";
+                background:white;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transition: all .2s ease-out;
+                top: -10px;
+            }
+
+            #primo::before{
+                top: 10px;
+            }
+
+            #primo::after{
+                top: -10px;
+            }
+
+
+            .menu-btn:checked ~ .hamburger #primo{
+
+                background-color: black;
+            }
+
+            .menu-btn:checked ~ .hamburger #primo::before{
+
+                /* È NECESSARIO SPECIFICARE LA CLASSE ".hamburger"
+                PERCHÈ LO SPAN CON ID "primo" NON È FRATELLO DELL'ELEMENTO input,
+                DATO CHE LO SPAN IN QUESTIONE È ALL'INTERNO DELL'ELEMENTO label */
+
+                    transform: rotate(-45deg);
+                    top:2px;
+                    transition: all .2s ease-out;
+                    background-color: white;
+            }
+
+            .menu-btn:checked ~ .hamburger #primo::after{
+                transform: rotate(45deg);
+                top:2px;
+                transition: all .2s ease-out;
+                background-color: white;
+        }
+
+
+        .dati p {
+            font-size: 21px;
+            text-align: center;
+        }
+
+        .dati h2{
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+
+        .footer{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col-footer{
+            font-size: 1.1rem;
+            padding:15px;
+            justify-content: center;
+            margin: 15px 0;
+        }
+
+        .wow{
+            display: block;
+            text-align: center;
+        }
+
+
+        .button--move{
+            margin-top: 5%;
+        }
+
+        .owo{
+            padding: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            display: block;
+            text-align: center;
+        }
+
+
+    .wow img{
+            width: 40%;
+        }
+
+
+        .cover__text{
+            left: 10%;
+        }
+
+        .info{
+            display: block;
+            margin: 35px 35px;
+        }
+
+        .dati{
+            margin-bottom: 20px;
+        }
+
+        #formDiv{
+            margin: 0 30px;
+        }
+}

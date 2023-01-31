@@ -1,0 +1,422 @@
+body{
+    font-family: Heebo , sans-serif !important;
+    }
+
+
+    .logo > input{
+        display: none;
+    }
+
+    /*BARRA */
+    .barra-principale{
+        display: flex;
+        justify-content: space-around;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        min-width: fit-content;
+        position: absolute;
+        width: 97%;
+    }
+
+    .logo img{
+        width: 35%;
+    }
+
+
+    .barra-menu{
+        display: flex;
+        color: white;
+    }
+
+    .barra-menu > a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.7rem;
+        padding: 24px 25px;
+    }
+
+    .barra-menu > a:hover{
+        color: orange;
+    }
+
+
+    .menu-mobile{
+        display:none;
+        right: -100%;
+    }
+
+
+
+    #cover{
+        background: url("https://www.franciaturismo.net/wp-content/uploads/sites/4/chenonceau-hd.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-color: #3e3d3d;
+        background-blend-mode: multiply;
+        height: 70vh;
+    }    
+
+    .big-title{
+        color: white;
+        position:absolute;
+        bottom:35%;
+        right:2%;
+        margin-top: 10rem;
+
+        font-size: 70px;
+        font-weight: 900;
+    }
+
+
+    /* CAROUSEL */
+
+    .carousel{
+        margin-top: 4%;
+        margin-bottom: 7%;
+        overflow: hidden;
+    }
+
+    .carousel-cell{
+        width:66%;
+        height: 500px;
+        margin-right: 10px;
+        border-radius: 15px;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .carousel-cell:before{
+        display: block;
+        content: '';
+    }
+
+
+    .articolo{
+        position: relative;
+        margin: 60px 50px;
+        text-align: justify;
+    }
+
+    .articolo p{
+        font-size: 19px;
+        line-height: 1.6;
+    }
+
+
+    .castello_sfondo{
+        background-image: url("https://images4.alphacoders.com/712/712556.jpg");
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        background-size: cover;
+        height: 60vh;
+        transition: background-color 4s;
+        position: relative;
+        background-position: center
+        }
+
+    .big-text{
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+
+    .castello_sfondo:after{
+        content: '';
+        position: absolute;
+        background-image: url("https://www.gelateriasettevoglie.it/images/border.png");
+        width: 100%;
+        height: 78px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 2;
+        bottom: 0;
+    }
+
+    /* BOTTONE CON ANIMAZIONE */
+    .button--move{
+        display:inline-block;
+        width:fit-content;
+        background-color: #316bff;
+        padding: 8px 14px;
+        margin:15px;
+        animation: rotate_effect 5s infinite ease-in-out;
+        text-decoration: none;
+        color: white;
+        margin-top: 50%;
+    }
+
+    @keyframes rotate_effect{
+        0%{transform: rotate(0deg);}
+        20%{transform: rotate(0deg);}
+        40%{transform: rotate(10deg);}
+        60%{transform: rotate(-10deg);}
+        80%{transform: rotate(0deg);}
+        100%{transform: rotate(0deg);}
+    }
+
+    /* FOOTER */
+    .bigDiv{
+        background-color: black
+    }
+
+    .footer{
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        bottom:0;
+    }
+
+    .col-footer{
+        margin: 70px 0;
+        padding: 10px;
+        }
+
+    .wow{
+        display: flex;
+        color:white;
+        justify-content: space-around;
+        margin: 0 10%;
+    }
+
+    .owo{
+    
+        color:white;
+        display: flex;
+        justify-content: space-around;
+
+        height: 8vh;
+    }
+
+    @media screen and (min-width:768px) and (max-width:900px){ /* MEDIA QUERY PER I TABLET */
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    
+    h2 , h3{
+        padding: 12px 0;
+    }
+    
+ 
+    .articolo{
+        width: 88%;
+        padding: 15px;
+        text-align: justify;
+        }
+
+
+        .articolo p {
+            font-size: 22px;
+        }
+
+        .big-title{
+
+            text-align: center;
+            left: 2%;
+            font-weight: 600;
+        }  
+
+
+        .button--move{
+            margin: -50px;
+            margin-top: 80%;
+        }
+
+    }
+    
+    
+    @media (max-width:767px){/* MEDIA QUERY PER I TELEFONI */
+    
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .big-title{
+
+            text-align: center;
+            bottom: 35%;
+            font-weight: 600;
+            font-size: 60px;
+        }
+
+        h2 , h3{
+            padding: 12px 0;
+        }
+
+        .barra-principale{
+            position: fixed;
+            z-index: 9999;
+            background-color: black;
+            top:0 ;
+            left: 0;
+        }
+
+        .logo{
+            margin-right: 5em;
+            position: relative;
+        }
+
+        .logo img{
+                width: 30%;
+        }
+
+        .barra-menu{
+            display: none;
+        }
+
+        .menu-mobile{
+            height: 130vh;
+            width: 100%;
+            background-color: black;
+            color: white;
+            z-index: 9999;
+            margin-top: 23%;
+            position: fixed;
+            transition: all 1s cubic-bezier(.215, .61, .355, 1);
+            display: block;
+            
+        }
+
+        .menu-mobile-open{
+            right: 0%;
+            z-index: 9999;
+        }
+
+        .menu-mobile a{
+            display: block; /*COSI POSSO CLICCARE TUTTA LA RIGA COME LINK*/
+            text-decoration: none;
+            color: white;
+            font-size: 2.1rem;
+            padding: 1.1em;
+        }
+
+        .menu-mobile a:hover{
+            color: orange
+        }
+
+
+            .nav-icon{
+                display: inline-block;
+                position: relative;
+                left: 13.5em;
+                bottom:2.2em;
+            }
+
+            #primo{
+                display: block;
+                height: 4px;
+                width: 36px;
+                margin-top: 9px;
+                position: absolute;
+                background:white;
+                top: 30%;
+                left: 108%;
+            }
+
+            #primo::before , #primo::after{
+                display: block;
+                content: "";
+                background:white;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transition: all .2s ease-out;
+                top: -10px;
+            }
+
+            #primo::before{
+                top: 10px;
+            }
+
+            #primo::after{
+                top: -10px;
+            }
+
+
+            .menu-btn:checked ~ .hamburger #primo{
+
+                background-color: black;
+            }
+
+            .menu-btn:checked ~ .hamburger #primo::before{
+
+                /* È NECESSARIO SPECIFICARE LA CLASSE ".hamburger"
+                PERCHÈ LO SPAN CON ID "primo" NON È FRATELLO DELL'ELEMENTO input,
+                DATO CHE LO SPAN IN QUESTIONE È ALL'INTERNO DELL'ELEMENTO label */
+
+                    transform: rotate(-45deg);
+                    top:2px;
+                    transition: all .2s ease-out;
+                    background-color: white;
+            }
+
+            .menu-btn:checked ~ .hamburger #primo::after{
+                transform: rotate(45deg);
+                top:2px;
+                transition: all .2s ease-out;
+                background-color: white;
+        }
+    
+    
+        .carousel{
+            height: 250px;
+        }
+
+        .carousel-cell{
+            height: 33vh;
+        }
+
+    
+        .articolo{
+            width: 89%;
+            margin: 41px 20px;
+            text-align: justify;
+        }
+
+        .castello_sfondo{
+            height: 30vh;
+        }
+
+        .footer{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .col-footer{
+            font-size: 1.1rem;
+            padding:15px;
+            justify-content: center;
+            margin: 15px 0;
+        }
+    
+        .wow{
+            display: block;
+            text-align: center;
+        }
+
+        .button--move{
+            margin-top: 5%;
+        }
+
+        .wow img{
+            width: 40%;
+        }
+    
+        .owo{
+            padding: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+            display: block;
+            text-align: center;
+        }
+
+    
+    }

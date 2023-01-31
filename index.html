@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Castle in a Click</title>
+        <link rel="icon" type="image/x-icon" href="logo_castello.png">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- IL LINK SOTTO SERVE PER SCRIVERE CSS UGUALE IN TUTTI I BROWSER -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- CDN DELLA LIBRERIA "SCROLL REVEAL" -->
+         <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- Flickity LIBRERIA CHE SERVE PER LO SLIDER-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"
+        integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- QUESTO È UN LINK PER IL CSS DI FLICKITY -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
+        integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- FONT-AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+        //MENU MOBILE
+        $(document).ready(function () {
+            $("#first").click(function () {
+                $(".menu-mobile").toggleClass("menu-mobile-open");
+            });
+        });
+        </script>
+
+    </head>
+    <body>
+        <div class="barra-principale">
+            <div class="logo">
+                
+                <a href="index.html"><img src="logo_castello.png" alt=""></a>
+                <input class="menu-btn" id="menu-btn" type="checkbox">
+                <label for="menu-btn" class="hamburger">
+    
+                    <span class="nav-icon" id="first"></span>
+                </label>
+    
+            </div>
+    
+    
+            <div class="barra-menu">
+                <a href="#" style="text-decoration: none;">Home</a>
+    
+                <a href="gallery.html" style="text-decoration: none;">Gallery</a>
+    
+                <a href="contatti.html" style="text-decoration: none;">Contatti</a>
+            </div>
+    
+    
+        </div>
+    
+        <div class="menu-mobile">
+            <ul>
+                <li> <a href="#" style="text-decoration: none;">Home</a></li>
+                <li><a href="gallery.html" style="text-decoration: none;">Gallery</a></li>
+                <li><a href="contatti.html" style="text-decoration: none;">Contatti</a></li>
+            </ul>
+        </div>
+
+
+        <div class="hero">
+
+            <div class="hero__content reveal">
+                <h1 class="big-text">Castle in a Click</h1>
+    
+                <div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="">
+                            <button class="buttono" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                SCOPRI DI PIÙ
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body" style="background-color: rgb(0 0 0 / 44%); padding: 5px">
+                                <p>Castle in a Click è un progetto che si articola in azioni che operano su due piani: quello della rete 
+                                    di Castelli Aperti nel suo insieme, con azioni finalizzate all’attrattività del territorio ed al 
+                                    turismo evoluto, e quello della conoscenza dei beni e del valore identitario di ogni singolo aderente.</p>
+                                <p>Il progetto si propone di valorizzare i beni del circuito di Castelli Aperti tramite eventi di 
+                                    ambito culturale, artistico e letterario strutturati in un calendario e visite esperienziali 
+                                    da proporre in maniera stabile. Verrà riservata particolare attenzione al target delle famiglie e
+                                    dei bambini.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>       
+            </div>
+    
+            <video autoplay muted loop id="video-back">
+                <source src="Castello di Neuschwanstein.mp4" type="video/mp4">
+            </video>
+    
+        </div>
+
+
+        <div class="bg-cover">
+            <div class="bg-cover__title reveal">
+                <h2 class="big-text" style="text-align: center">Castelli <br>più famosi</h2>
+            </div>
+            <div class="bg-cover__text ">
+                <div class="reveal">
+                    <h3 class="titolo-secondario castelli">Castello di Neuschwanstein</h3>
+                    <p class="mt-1">È un castello costruito alla fine del XIX secolo e situato nel sud-ovest della Baviera
+                        nei pressi di Füssen.</p>
+                </div>
+                <div class="reveal">
+                    <h2 class="titolo-secondario mt-2 castelli">Castello Hunyadi</h2>
+                    <p class="mt-1">Uno dei castelli più grandi d’Europa, costruito in stile gotico-rinascimentale all’inizio del XIV secolo
+                        nel cuore della Transilvania.</p>
+                </div>
+                <div class="reveal">
+                    <h2 class="titolo-secondario mt-2 castelli">Castello di Chenonceau</h2>
+                    <p class="mt-1">Il castello di Chenonceau è situato nella regione Centre Val de Loire.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+
+    <div id="primo">
+
+        <div class="image reveal">
+            <img src="https://www.eosdiscovery.it/wp-content/uploads/2020/10/CASTELLO-NEUSCHWANSTEIN-COME-ARRIVARE-TRAMONTO.jpg" alt="Il castello di Neuschwanstein">
+        </div>
+
+
+        <div class="testo reveal">
+
+            <h2 class="titolo-secondario">
+                Il castello di Neuschwanstein
+            </h2>
+            <p style="line-height: 28px;">
+                Quando si dice “castello da fiaba” l’immagine che si forma nella nostra mente è quella del <b>Castello di 
+                Neuschwanstein</b> , idilliaco palazzo immerso in un incantevole scenario naturale nella Baviera. In effetti
+                 è diventato un castello da fiaba, dal momento che proprio al romantico palazzo tedesco si ispirò <b>Walt
+                  Disney</b>  per disegnare il castello de “La bella addormentata nel bosco”, poi diventato lo stemma della
+                   casa di produzione ed un’attrazione onnipresente nei parchi divertimento Disneyland.<br><br>
+                   Arroccato su una collina alta 965 metri, il castello con le sue torri e i suoi pinnacoli domina dall’
+                   alto i vicini paesini di Füssen e Schwangau e i laghi circostanti: dalle sue sale è possibile godere 
+                   di una vista mozzafiato.L’impianto scenico del castello è davvero spettacolare: composto da una serie
+                    di strutture individuali erette su un picco roccioso, il castello di Neuschwanstein con la sua forma
+                    allungata appare come una vera e propria prosecuzione delle montagne circostanti.<br><br>
+
+                   Ogni anno <b>1,4 milioni di persone</b>, con punte di 6000 al giorno nei mesi estivi, visitano le sale del 
+                   castello per respirare l’aria romantica di questo luogo bellissimo e per scoprire di più sulla sua 
+                   storia e sulla personalità eccentrica del suo ideatore. 
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="secondo">
+
+
+        <div class="image reveal" id="castle">
+            <img src="https://siviaggia.it/wp-content/uploads/sites/2/2021/09/Castello-di-Neuschwanstein.jpg" alt="Il castello di Neuschwanstein 2">
+        </div>
+
+
+        <div class="testo reveal" id="text">
+
+            <h2 class="titolo-secondario">
+                La costruzione
+            </h2>
+
+            <p style="line-height: 28px;">Nel 1868 furono realizzati i primi schizzi per un castello da costruire al di sopra del quieto Hohenschwangau
+                 dove il <b>re Ludovico II</b>  trascorse parte della sua infanzia. Il palazzo è particolare già dal progetto iniziale, 
+                 che il re volle affidare a scenografi teatrali anziché architetti.<br><br> I lavori di costruzione ebbero inizio 
+                 nell’estate del 1869 e si protrassero per lunghi anni a causa di difficoltà tecniche e dei continui ripensamenti
+                  del re, che voleva apportare modifiche al progetto originario. Ironicamente, soltanto sette giorni dopo la 
+                  morte di Ludovico II il castello venne aperto al pubblico e divenne in poco tempo un’attrazione visitatissima.<br><br>
+                  Il castello di Neuschweinstein è frutto dell’enorme fantasia e delle manie di grandezza di Ludovico II, che si
+                   interessò personalmente del progetto e delle decorazioni interne. La seconda figura importante per l’ideazione
+                    del magnifico castello è il musicista <b>Richard Wagner</b>, che il re ammirava profondamente.<br><br> Il castello era inteso
+                     come un teatro permanente dedicato alla musica ed alle arti in cui ricreare il mondo della mitologia tedesca
+                      attraverso le opere liriche di Richard Wagner. Evidente è l’omaggio alle opere del celebre compositore, con
+                       stanze decorate da scene e temi dichiaratamente wagneriani: storie di amore, colpa, pentimento e redenzione
+                        vissute da re e cavalieri, poeti e coppie d’amanti.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="line"></div>
+
+    <div class="poster">
+        <div class="poster__img reveal">
+            <img src="https://www.domanidoveandiamo.it/wp-content/uploads/2020/07/Hunyad_Castle.jpg" alt="Castello dei Corvino">
+        </div>
+        <div class="poster__content reveal">
+            <h3 class="big-text">Castello Hunyadi</h3>
+            <p>È un castello presso la città transilvana di Hunedoara, in Romania.
+            </p>
+            <a href="articolo.html" class="button" style="text-decoration: none;">Leggi l'articolo</a>
+        </div>
+    </div>
+
+
+    <div class="line"></div>
+
+    <div class="poster">
+        <div class="poster__content reveal" id="testoo">
+            <h3 class="big-text">Castello di Chenonceau</h3>
+            <p>Il castello di Chenonceau è un castello situato nei pressi di Chenonceaux nel dipartimento dell'Indre 
+                e Loira nella Valle della Loira in Francia.
+            </p>
+            <a href="articolo2.html" class="button" style="text-decoration: none;">Leggi l'articolo</a>
+        </div>
+        <div class="poster__img reveal" id="castlee">
+            <img src="https://www.caldana.it/files/blog/image/size1/FR_Loira_Chenonceau_32005.jpg" alt="Castello di Chenonceau">
+        </div>
+
+        <div class="poster__content reveal" id="testooo">
+            <h3 class="big-text">Castello di Chenonceau</h3>
+            <p>Il castello di Chenonceau è un castello situato nei pressi di Chenonceaux nel dipartimento dell'Indre 
+                e Loira nella Valle della Loira in Francia.
+            </p>
+            <a href="articolo2.html" class="button" style="text-decoration: none;">Leggi l'articolo</a>
+        </div>
+
+    </div>
+
+
+
+    <div class="panel-blue mt-2">
+
+        <div class="grid">
+            <div class="col panel-blue__dots">
+                <div class="dot zoom" title="Castello Scaligero">
+                    <a href="https://it.wikipedia.org/wiki/Castello_Scaligero_(Sirmione)">
+                        <img src="https://www.lagodigardaeventi.it/wp-content/uploads/2021/03/castello-di-sirmione.jpg" alt="Il Castello Scaligero di Sirmione">
+                    </a>          
+                </div>
+                <div class="dot zoom" title="Castello Sforzesco">
+                    <a href="https://it.wikipedia.org/wiki/Castello_Sforzesco">
+                        <img src="https://images.placesonline.com/photos/castello-sforzesco_1239436441_143082_1662991489.jpg?quality=80&w=700" alt="Castello Sforzesco">
+                    </a>
+                </div>
+                <div class="dot zoom" title="Castello del Valentino">
+                    <a href="https://it.wikipedia.org/wiki/Castello_del_Valentino">
+                        <img src="https://www.italia.it/content/dam/tdh/it/destinations/piemonte/torino/castello-del-valentino/media/20220510102505-castellovalentino-torino-piemonte-shutterstock-1658762920.jpg" alt="Castello del Valentino">
+                    </a>   
+                </div>
+                <div class="dot zoom" title="Castello del Buonconsiglio">
+                    <a href="https://it.wikipedia.org/wiki/Castello_del_Buonconsiglio">
+                        <img src="https://www.progettostoriadellarte.it/wp-content/uploads/2020/08/1920px-Torre_dAugusto_in_Trient.jpg" alt="Castello del Buonconsiglio">
+                    </a>        </div>
+                </div>
+            <div class="col panel-blue__text">
+                <div class="grid">
+                    <div class="col reveal">
+                        <h3 class="big-text">Castelli italiani</h3>
+                    </div>
+                    <div class="col reveal" style="color: white;">
+                            <p class="">Arroccati su cime montuose, immersi in boschi incantati o affacciati sul mare, i castelli italiani sono 
+                            innumerevoli, ognuno così diverso dagli altri.</p><br>
+
+                            <p> Testimoni di una lunga storia, i castelli ci riportano in mondi lontani 
+                            che rievocano mitiche fiabe e antiche leggende. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="bigDiv">
+
+                <div class="wow">
+                    <div class="" style="padding: 20px;">
+                        <img src="logo_castello.png" alt="logo del sito">
+                    </div>
+        
+                    <div id="iscrizione" style="padding: 20px; text-align: center;">
+                        <a href="" class="button--move" style="text-decoration: none;">ISCRIVITI ALLA NEWSLETTER</a>
+                    </div>
+                </div>
+
+                <div class="footer">
+
+                    <div class="col-footer">informazioni legali</div>
+                    <div class="col-footer">Impostazioni privacy</div>
+                    <div class="col-footer"> P.IVA 06021213585</div>
+                    <div class="col-footer">Termini e condizioni</div>
+
+                </div>
+
+                <div class="owo">
+
+                    <p>Copyright © 2023 CastleClick Inc.</p>
+                    <p>Tutti i diritti riservati</p>
+
+                </div>
+        </div>
+
+
+
+        <script>
+            const testo1 = document.querySelector("#testoo");
+            const testo2 = document.querySelector("#testooo");
+    
+            let x = window.matchMedia("(min-width:768px) and (max-width:1200px)");
+    
+            if(x.matches){
+                testo1.style.display = "none";
+    
+                testo2.style.display = "block";
+            }
+
+        </script>
+
+            <!-- PER POTER VISUALIZZARE L'ACCORDION È FONDAMENTALE AGGIUNGERE QUESTO SCRIPT, QUESTO SCRIPT È DELLA VERSIONE 5.2 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+                    // INSERISCO QUESTA STRINGA IN UNO SCRIPT PER INIZIALIZZARE LA LIBRERIA "SCROLL REVEAL"
+                    ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600 });
+
+                    ScrollReveal().reveal('.zoom', { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale: 0.65, mobile: false });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="icon" type="image/x-icon" href="logo_castello.png">
+    <link rel="stylesheet" href="gallery.css">
+
+    <!-- IL LINK SOTTO SERVE PER SCRIVERE CSS UGUALE IN TUTTI I BROWSER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- CDN DELLA LIBRERIA "SCROLL REVEAL" -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+    //MENU MOBILE
+    $(document).ready(function () {
+        $("#primo").click(function () {
+            $(".menu-mobile").toggleClass("menu-mobile-open");
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="barra-principale">
+        <div class="logo">
+            
+            <a href="index.html"><img src="logo_castello.png" alt=""></a>
+            <input class="menu-btn" id="menu-btn" type="checkbox">
+            <label for="menu-btn" class="hamburger">
+
+                <span class="nav-icon" id="primo"></span>
+            </label>
+
+        </div>
+
+
+        <div class="barra-menu">
+            <a href="index.html">Home</a>
+
+            <a href="#">Gallery</a>
+
+            <a href="contatti.html">Contatti</a>
+        </div>
+
+
+    </div>
+
+    <div class="menu-mobile">
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+    </div>
+
+
+    <section class="castello_sfondo">
+        <div class="bg-cover__title reveal">
+            <h1 class="big-text">Benvenuto nella gallery</h1>
+        </div>
+    </section>
+
+
+    <div class="row"> 
+        <div class="column">
+          <img src="https://i.pinimg.com/originals/37/c9/d4/37c9d40685a6909650150217cf6d0b28.jpg" class="castelli" style="width:100%" alt="Castello di Butrón">
+          <img src="https://assets.afcdn.com/album/D20180216/phalbm25324194.jpg" class="castelli" style="width:100%" alt="Castello di Lichtenstein">
+          <img src="https://www.guidaturisticavda.com/wp-content/uploads/2020/12/Castel-Savoia.jpg" class="castelli" style="width:100%" alt="Castel Savoia">
+          <img src="https://a.cdn-hotels.com/gdcs/production28/d1989/8e13e9b0-59c1-11e8-a5ee-0242ac110030.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" class="castelli" style="width:100%" alt="Castello di Fontainebleau">
+          <img src="https://st3.depositphotos.com/11797962/14625/i/450/depositphotos_146251071-stock-photo-satzvey-castle-in-germany.jpg" class="castelli" style="width:100%" alt="Castello di Satzvey">
+          <img src="https://www.mediterraneaonline.eu/wp-content/uploads/2020/10/Castello-di-Miramare-Italia-2.jpg" class="castelli" style="width:100%" alt="Castello di Miramare">
+        </div>
+        <div class="column">
+          <img src="https://a.cdn-hotels.com/gdcs/production68/d225/6f197d0a-f635-43e9-a933-58c31d243add.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" class="castelli" style="width:100%" alt="Castello di Ussé">
+          <img src="https://media.istockphoto.com/id/458265963/it/foto/saumur.jpg?s=612x612&w=0&k=20&c=lz_ZLwBlt1czle8vHs7P1iXCst8Gp-lB7AfBIg8aRgA=" class="castelli" style="width:100%" alt="Castello di Saumur">
+          <img src="https://www.manuelaemozioniinunoscatto.com/wp-content/uploads/2022/05/colomares-960x553.jpg" class="castelli" style="width:100%" alt="Castello di Colomares">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/0b/8f/b2/19/caption.jpg" class="castelli" style="width:100%" alt="Castello di Ponizovkin">
+          <img src="https://www.regione.vda.it/immagine.aspx?pk=86295&w=668" class="castelli" style="width:100%" alt="Castello di Aymavilles">
+          <img src="https://a.cdn-hotels.com/gdcs/production76/d249/2992e70d-0f50-44ce-a230-9dcb69fa3dd0.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" class="castelli" style="width:100%" alt="Castello di Haut-Koenigsbourg">
+          <img src="https://www.viaggiatricecuriosa.it/wp-content/uploads/2020/10/castello-poppi.jpg" class="castelli" style="width:100%" alt="Castello di Poppi">
+        </div>  
+        <div class="column">
+          <img src="https://www.viaggiamo.it/wp-content/uploads/2020/07/eltz.jpg" class="castelli" style="width:100%" alt="Castello di Eltz">
+          <img src="https://www.costacrociere.it/content/dam/costa/costa-magazine/articles-magazine/heritage/kilkenny-castle/altri-castelli-irlanda_m.jpg.image.694.390.low.jpg" class="castelli" style="width:100%" alt="Castello di Kilkenny">
+          <img src="https://media.tacdn.com/media/attractions-content--1x-1/0f/ec/ae/6e.jpg" class="castelli" style="width:100%" alt="Castello di Inveraray">
+          <img src="https://a.cdn-hotels.com/gdcs/production129/d136/90342be9-b270-4682-a728-e738c79b35a7.jpg?impolicy=fcrop&w=1600&h=1066&q=medium" class="castelli" style="width:100%" alt="Castello di Chantilly">
+          <img src="https://www.viaggiareconlentezza.com/wp-content/uploads/2021/09/241071804_10225144719227180_8049778281570867565_n.jpg" class="castelli" style="width:100%" alt="Castello di Cochem">
+          <img src="https://www.insolitamsterdam.com/blog/wp-content/uploads/2016/09/ia_3-castelli-da-vedere-nei-paesi-bassi.png" class="castelli" style="width:100%" alt="Castello Di Doornenburg">
+        </div>
+        <div class="column">
+          <img src="https://www.ilgiornaledellarte.com/immagini/IMG20181130124506449_1000.jpeg" class="castelli" style="width:100%" alt="Castello di Marienburg">
+          <img src="https://cdn.museum.nl/assets/ed7ad5b3-67ba-4f00-bcb9-46d7ca7c6240?w=3000&c=405f045ccd67f5c46dec923cbf0ea883c5b8c269dd8e33b1fc73815fee744a30" class="castelli" style="width:100%" alt="Castello De Haa">
+          <img src="https://st.depositphotos.com/1307373/2428/i/600/depositphotos_24284859-stock-photo-castle-hluboka-nad-vltavou.jpg" class="castelli" style="width:100%" alt="Castello di Hluboká">
+          <img src="https://d2exd72xrrp1s7.cloudfront.net/www/000/1k3/9b/9bninv2nxpqeagj8uk6zbtm933ifdstd-uhi7681719/0?width=768&height=576&crop=true" class="castelli" style="width:100%" alt="Castello di Moszna">
+          <img src="https://capcosepuri.it/site/wp-content/uploads/2018/04/castelli.jpg" class="castelli" style="width:100%" alt="Castello di Vincigliata">
+          <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res40/35000/35484.jpg" class="castelli" style="width:100%" alt="Castello di Fénis" id="fenis">
+        </div>
+      </div>
+
+
+
+      <div id="sfondoScuro"></div>
+
+      <img src="" id="zoom">
+      
+       <!-- QUESTE QUI SOTTO SONO LE CLASSI PER GLI EFFETTI DELLA LIBRERIA ANIMATE.CSS -->
+      <h2 id="nomeCastello" class="big-text animate__animated animate__fadeInUp"></h2>
+
+
+    <div class="bigDiv">
+
+        <div class="wow">
+            <div class="" style="padding: 20px;">
+                <img src="logo_castello.png" alt="logo del sito">
+            </div>
+
+            <div id="iscrizione" style="padding: 20px; text-align: center;">
+                <a href="" class="button--move">ISCRIVITI ALLA NEWSLETTER</a>
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <div class="col-footer">informazioni legali</div>
+            <div class="col-footer">Impostazioni privacy</div>
+            <div class="col-footer"> P.IVA 06021213585</div>
+            <div class="col-footer">Termini e condizioni</div>
+
+        </div>
+
+        <div class="owo">
+
+            <p style="padding-bottom: 20px;">Copyright © 2023 CastleClick Inc.</p>
+            <p>Tutti i diritti riservati</p>
+
+        </div>
+</div>
+
+    <script>
+        //QUI MI OCCUPO DELLE IMMAGINI CON LO SFONDO SCURO
+
+        const bodyy = document.querySelector("body");
+        const castelli = document.querySelectorAll(".castelli");
+        const sfondoScuro = document.getElementById("sfondoScuro");
+        const zoom = document.getElementById("zoom");
+
+        const nomeCastello = document.querySelector("#nomeCastello");
+        
+
+        sfondoScuro.addEventListener("click", function () {
+            this.style.display = "none";
+            zoom.style.display = "none";
+
+            nomeCastello.style.display = "none";
+        })
+
+        for (let i = 0; i < castelli.length; i++) {
+
+            const castelloSRC = castelli[i].getAttribute("src"); // CREO UNA VARIABILE CHE SIA UGUALE ALLA src DELL'IMMAGINE CLICCATA
+            const altNome = castelli[i].getAttribute("alt");
+
+            castelli[i].addEventListener("click", function () {
+
+
+                zoom.setAttribute("src", castelloSRC);           // ASSEGNO ALLA VARIABILE zoom IL VALORE DELLA src DELL'IMMAGINE CLICCATA
+                zoom.setAttribute("alt", altNome);               // ASSEGNO ALLA VARIABILE zoom IL VALORE DELL' alt DELL'IMMAGINE CLICCATA
+
+                sfondoScuro.style.display = "block";
+
+                zoom.style.display = "block";               // AL CLICK SULL'IMMAGINE, FALLA COMPARIRE AL CENTRO
+                zoom.style.position = "fixed";
+                zoom.style.top = "18%";
+                zoom.style.left = "30%";
+
+                nomeCastello.innerText = zoom.getAttribute("alt");  //DO IL VALORE DELL'ALT AL CONTENUTO DEL PARAGRAFO
+                nomeCastello.style.display = "block";
+                nomeCastello.style.position = "fixed";
+                nomeCastello.style.top = "3%";
+                nomeCastello.style.left = "30%";
+
+                let x = window.matchMedia("(max-width: 767px)") //
+                if (x.matches) {        //SE LO FACCIO DA CELLULARE...
+                    zoom.style.display = "block";               
+                    zoom.style.position = "fixed";
+                    zoom.style.top = "19%";
+                    zoom.style.left = "3%";
+
+                    nomeCastello.style.top = "71%";
+                    nomeCastello.style.left = "2%";
+                    nomeCastello.style.textAlign = "center";
+                    nomeCastello.style.fontSize = "50px";
+                }
+
+                
+
+                let y = window.matchMedia("(min-width:768px) and (max-width:1200px)") //
+                if (y.matches) {        //SE LO FACCIO DA TABLET...
+                    zoom.style.display = "block";               
+                    zoom.style.position = "fixed";
+                    zoom.style.top = "19%";
+                    zoom.style.left = "17%";
+
+                    nomeCastello.style.top = "71%";
+                    nomeCastello.style.left = "9%";
+                    nomeCastello.style.textAlign = "center";
+                    nomeCastello.style.fontSize = "60px";
+                }
+
+            })
+        };
+
+    </script>
+    
+
+    <script>
+        // INSERISCO QUESTA STRINGA IN UNO SCRIPT PER INIZIALIZZARE LA LIBRERIA "SCROLL REVEAL"
+        ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 900 });
+    </script>
+</body>
+</html>

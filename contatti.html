@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contatti</title>
+        <link rel="icon" type="image/x-icon" href="logo_castello.png">
+        <link rel="stylesheet" href="contatti.css">
+
+        <!-- IL LINK SOTTO SERVE PER SCRIVERE CSS UGUALE IN TUTTI I BROWSER -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- CDN DELLA LIBRERIA "SCROLL REVEAL" -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        
+        <!-- FONT-AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- JQUERY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+        //MENU MOBILE
+        $(document).ready(function () {
+            $("#primo").click(function () {
+                $(".menu-mobile").toggleClass("menu-mobile-open");
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="barra-principale">
+            <div class="logo">
+                
+                <a href="index.html"><img src="logo_castello.png" alt=""></a>
+                <input class="menu-btn" id="menu-btn" type="checkbox">
+                <label for="menu-btn" class="hamburger">
+
+                    <span class="nav-icon" id="primo"></span>
+                </label>
+
+            </div>
+
+
+            <div class="barra-menu">
+                <a href="index.html">Home</a>
+
+                <a href="gallery.html">Gallery</a>
+
+                <a href="#">Contatti</a>
+            </div>
+
+        </div>
+
+        <div class="menu-mobile">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div class="cover filter" style="background: url(https://www.lagodigardaeventi.it/wp-content/uploads/2021/03/castello-di-sirmione.jpg) center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; height: 70vh; background-color: #3e3d3d; background-blend-mode: multiply;">
+
+            <div class="cover__text">
+    
+                <h1 class="" style="font-size:55px; color: white;"> Contatti</h1>
+    
+                <h2 class="" style="font-size: 22px; color: white;">Vuoi più informazioni sui castelli?<br> Non esitare a contattarci</h2>
+            </div>
+        </div>
+    
+    
+    <main> 
+        
+            <div class="info">
+                <div class="dati">
+                    <h2>Contatti</h2>
+                    <p>Per contattarci compila i dati<br> sottostanti e clicca su invia</p>
+                    <p>In alternativa chiamaci:</p>
+                    <p>Mario Rossi  +39 3328542144</p>  
+
+                </div>
+                <div class="dati">
+                    <h2>Seguici su</h2>
+                    <p> <a href="#" style="text-decoration: none; cursor: pointer;">Facebook</a><br>
+                    <p> <a href="#" style="text-decoration: none; cursor: pointer;">Instagram</a><br> 
+                    <p> <a href="#" style="text-decoration: none; cursor: pointer;">Twitter</a><br></p>
+                </div>
+            </div>
+
+        <div id="formDiv">
+            <form action="" >
+
+                    <label for="nome">Nome *</label><br>
+                    <input type="text" id="nome" name="nome" value="" maxlength="30" required><br><br>
+
+                    <label for="cognome">Cognome *</label><br>
+                    <input type="text" id="cognome" name="cognome" value="" maxlength="30" required><br><br>
+
+                    <label for="oggetto">Oggetto *</label><br>
+                    <input type="text" id="oggetto" name="oggetto" value="" maxlength="30" required><br><br>
+
+                    <label for="messaggio">Il tuo messaggio</label>
+                    <textarea type="text" id="messaggio" name="messaggio" value=""></textarea><br><br>
+
+                    <button type="submit" class="button" style="margin-bottom: 35px;"   id="btn-invia">INVIA</button>
+                    <!-- <p style="border: 2px solid orange;" id="non-inviato">Uno o più campi hanno errori. Per favore controlla e prova di nuovo.</p>
+                    <p style="border: 2px solid green;" id="inviato">Grazie per il tuo messaggio. È stato inviato.</p> -->
+            </form>
+
+        </div>        
+    </main>
+
+
+
+
+
+        <div class="bigDiv">
+
+            <div class="wow">
+                <div class="" style="padding: 20px;">
+                    <img src="logo_castello.png" alt="logo del sito">
+                </div>
+
+                <div id="iscrizione" style="padding: 20px; text-align: center;">
+                    <a href="" class="button--move">ISCRIVITI ALLA NEWSLETTER</a>
+                </div>
+            </div>
+
+            <div class="footer">
+
+                <div class="col-footer">informazioni legali</div>
+                <div class="col-footer">Impostazioni privacy</div>
+                <div class="col-footer"> P.IVA 06021941213</div>
+                <div class="col-footer">Termini e condizioni</div>
+
+            </div>
+
+            <div class="owo">
+
+                <p style="padding-bottom: 20px;">Copyright © 2023 CastleClick Inc.</p>
+                <p>Tutti i diritti riservati</p>
+
+            </div>
+        </div>
+
+        <script>
+            const inviato = document.querySelector("#inviato");
+            const nonInviato = document.querySelector("#non-inviato");
+            const bottone = document.querySelector("#btn-invia");
+            
+        </script>
+
+        <script>
+            // INSERISCO QUESTA STRINGA IN UNO SCRIPT PER INIZIALIZZARE LA LIBRERIA "SCROLL REVEAL"
+            ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 900 });
+        </script>
+    </body>
+</html>

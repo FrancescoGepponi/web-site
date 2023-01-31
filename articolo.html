@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Il Castello dei Corvino</title>
+        <link rel="icon" type="image/x-icon" href="logo_castello.png">
+        <link rel="stylesheet" href="articolo.css">
+
+        <!-- IL LINK SOTTO SERVE PER SCRIVERE CSS UGUALE IN TUTTI I BROWSER -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- CDN DELLA LIBRERIA "SCROLL REVEAL" -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- Flickity LIBRERIA CHE SERVE PER LO SLIDER-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"
+        integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- QUESTO È UN LINK PER IL CSS DI FLICKITY -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
+        integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- FONT-AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+            <!-- JQUERY -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <script>
+            //MENU MOBILE
+            $(document).ready(function () {
+                $("#primo").click(function () {
+                    $(".menu-mobile").toggleClass("menu-mobile-open");
+                });
+            });
+            </script>
+    </head>
+    <body>
+
+        <div class="barra-principale">
+            <div class="logo">
+                
+                <a href="index.html"><img src="logo_castello.png" alt=""></a>
+                <input class="menu-btn" id="menu-btn" type="checkbox">
+                <label for="menu-btn" class="hamburger">
+    
+                    <span class="nav-icon" id="primo"></span>
+                </label>
+    
+            </div>
+    
+    
+            <div class="barra-menu">
+                <a href="index.html">Home</a>
+    
+                <a href="gallery.html">Gallery</a>
+        
+                <a href="contatti.html">Contatti</a>
+            </div>
+    
+    
+        </div>
+    
+        <div class="menu-mobile">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </div>
+
+
+
+        <div id="cover">
+            <h1 class="big-title reveal">Il Castello dei Corvino</h1>
+        </div>
+
+
+            <div class="articolo">
+                <p>La Romania è famosa per i suoi fiabeschi castelli medievali, disseminati in particolare nella regione della 
+                    Transilvania, e tra questi ce n’è uno che più di tutti riuscirà a incantare i suoi visitatori: il <b>Castello dei Corvino</b>.
+                    Conosciuto anche con il nome di Castello Hunyadi, è considerato una delle sette meraviglie
+                     della Romania grazie alla sua particolare struttura che richiama i castelli a cui le fiabe o le saghe fantasy ci hanno
+                    abituati.
+                </p><br>
+                <p>La prima leggenda legata al castello e ai suoi proprietari riguarda proprio il loro nome e lo stemma della 
+                    famiglia Corvino, costituito da un corvo che regge un anello d’oro nel becco.
+                    Pare che Ioan de Hunedoara fosse un figlio illegittimo del re d’Ungheria Sigismondo di Lussemburgo e di 
+                    una donna chiamata Elisabetta.
+                    Il re, per evitarle la vergogna, la diede in moglie a uno dei suoi capitani e donò al nascituro un anello
+                     per permettergli di riconoscerlo quando, da grande, fosse venuto a corte.<br><br> 
+                     Un giorno il piccolo Ioan lasciò per un momento incustodito l’anello che fu rubato da un corvo attratto dal suo luccichio. 
+                     Ioan però riuscì ad impugnare arco e frecce e ad uccidere il corvo riprendendosi il regalo paterno. 
+                     Quando poi giunse a corte raccontò questa sua prodezza al re che decise di usare proprio un corvo con 
+                     un anello d’oro nel becco per rappresentare la famiglia di Ioan.</p><br>
+
+
+
+                
+
+                <div class="main-carousel__stewie mt-2" data-flickity='{ "cellAlign": "left", "contain": true }'>
+    
+                    <div class="carousel-cell__stewie">
+                        <img src="https://img.freepik.com/premium-photo/corvin-castle-with-wooden-bridge-hunedoara-hunyad-castle-transylvania-romania-europe-aerial_527096-7876.jpg?w=2000" alt="Castello dei Corvino 1">
+                    </div>
+            
+                    <div class="carousel-cell__stewie">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Castelul_Huniazilor_15.JPG" alt="Castello dei Corvino 2">
+                    </div>
+            
+                    <div class="carousel-cell__stewie">
+                        <img src="https://allascopertadellaromania.files.wordpress.com/2016/05/sala-dieta-2.jpg" alt="Castello dei Corvino 3">
+                    </div>
+            
+                    <div class="carousel-cell__stewie">
+                        <img src="https://4.bp.blogspot.com/-gLq1_GuHePM/Wp20T41Pt_I/AAAAAAAAAzg/Dw_5i-4P-iUDKiSeWje3z6Bb2xIp6PPRACEwYBhgL/s1600/castelul%2Bhunyadi%2B2.png" alt="Castello dei Corvino 4">
+                    </div>
+            
+                    <div class="carousel-cell__stewie">
+                        <img src="https://d12sdxqkowbk15.cloudfront.net/wp-content/uploads/2020/03/castello-corvino-11.jpg" alt="Castello dei Corvino 5">
+                    </div>
+            
+                </div>
+
+
+                    <p>Un’altra leggenda è invece legata al pozzo che si trova vicino alla cappella, che pare sia stato scavato da tre prigionieri
+                         turchi che Ioan de Hunedoara teneva nel castello. Ioan promise loro che se fossero riusciti a scavare un pozzo per rifornire
+                          il castello di acqua buona li avrebbe liberati.<br><br>
+                           I tre scavarono fiduciosi per ben 15 anni e riuscirono nell’impresa 
+                          arrivando a 28 metri di profondità. Peccato però che nel frattempo Ioan fosse morto e le sorti dei prigionieri 
+                          dipendessero a quel punto dalla volontà di sua moglie Elisabeta Szilagyi, la quale però decise di violare il patto 
+                          stipulato tra i prigionieri e il marito.
+                           A quel punto i tre prigionieri, per vendicarsi, incisero nel pozzo la scritta “Avrai l’acqua, ma non hai l’anima”.</p><br><br>
+
+                    <p>Il castello è stato usato spesso per riprese cinematografiche: il primo regista a girarci un film all'interno fu 
+                        Sergio Necolaesco nel 1970 con "Michele il Bravo", mentre in tempi più recenti è stato il set di film fantasy 
+                        come “Dragonheart 4” e "Ghost Rider".</p>
+
+        </div>
+
+            <div class="castello_sfondo">
+
+            </div>
+
+
+        <div class="bigDiv">
+
+            <div class="wow">
+                <div class="" style="padding: 20px;">
+                    <img src="logo_castello.png" alt="logo del sito">
+                </div>
+
+                <div id="iscrizione" style="padding: 20px; text-align: center;">
+                    <a href="" class="button--move">ISCRIVITI ALLA NEWSLETTER</a>
+                </div>
+            </div>
+
+            <div class="footer">
+
+                <div class="col-footer">informazioni legali</div>
+                <div class="col-footer">Impostazioni privacy</div>
+                <div class="col-footer"> P.IVA 06021213585</div>
+                <div class="col-footer">Termini e condizioni</div>
+
+            </div>
+
+            <div class="owo">
+
+                <p style="padding-bottom: 20px;">Copyright © 2023 CastleClick Inc.</p>
+                <p>Tutti i diritti riservati</p>
+
+            </div>
+        </div>
+        <script>
+                // INSERISCO QUESTA STRINGA IN UNO SCRIPT PER INIZIALIZZARE LA LIBRERIA "SCROLL REVEAL"
+                ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 900 });
+        </script>
+    </body>
+</html>

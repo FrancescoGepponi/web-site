@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Il Castello di Chenonceau</title>
+        <link rel="icon" type="image/x-icon" href="logo_castello.png">
+        <link rel="stylesheet" href="articolo2.css">
+
+        <!-- IL LINK SOTTO SERVE PER SCRIVERE CSS UGUALE IN TUTTI I BROWSER -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- CDN DELLA LIBRERIA "SCROLL REVEAL" -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- Flickity LIBRERIA CHE SERVE PER LO SLIDER-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"
+        integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- QUESTO È UN LINK PER IL CSS DI FLICKITY -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
+        integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- FONT-AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+            <!-- JQUERY -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <script>
+            //MENU MOBILE
+            $(document).ready(function () {
+                $("#primo").click(function () {
+                    $(".menu-mobile").toggleClass("menu-mobile-open");
+                });
+            });
+            </script>
+    </head>
+    <body>
+
+        <div class="barra-principale">
+            <div class="logo">
+                
+                <a href="index.html"><img src="logo_castello.png" alt=""></a>
+                <input class="menu-btn" id="menu-btn" type="checkbox">
+                <label for="menu-btn" class="hamburger">
+    
+                    <span class="nav-icon" id="primo"></span>
+                </label>
+    
+            </div>
+    
+    
+            <div class="barra-menu">
+                <a href="index.html">Home</a>
+    
+                <a href="gallery.html">Gallery</a>
+        
+                <a href="contatti.html">Contatti</a>
+            </div>
+    
+    
+        </div>
+    
+        <div class="menu-mobile">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </div>
+
+
+
+        <div id="cover">
+            <h1 class="big-title reveal">Il castello "delle Dame"</h1>
+        </div>
+
+
+            <div class="articolo">
+                <p>Considerato uno dei castelli più famosi e romantici della Valle della Loira, il castello di Chenonceau è una della
+                     massime testimonianze della raffinatezza e dell’eleganza del Rinascimento, grazie alla ricchezza delle decorazioni,
+                      degli arredi ma soprattutto dei suoi giardini.<br>
+                       Viene spesso chiamato il castello delle donne dal 
+                      momento che venne realizzato, progettato e ampliato da una serie di donne straordinarie e fuori dal comune come
+                       Katherine Briçonnet, Diane de Poitiers, Caterina de’ Medici e Madame Dupin, che lo hanno amato e preservato dai
+                        conflitti e dalle guerre.
+                </p><br>
+                <p>Ogni angolo del castello riflette l’impronta femminile, con la sua leggiadria ed eleganza.
+                    Sono soprattutto i giardini a renderlo così particolare: la parte realizzata da Diane de Poitiers, custodisce una
+                     fontana che spruzza un getto d’acqua alto sei metri, mentre quella curata da Caterina dè Medici vanta una
+                      superficie di 5.500 kmq, un labirinto di oltre un ettaro e un orto botanico.</p><br>
+                <p></p><br>
+
+
+
+                
+
+                <div class="carousel" data-flickity='{"autoPlay": true, "cellAlign": "center", "contain": true }'>
+
+                    <div class="carousel-cell" style="background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/131000/131546-Indre-Et-Loire-Department.jpg)"></div>
+                    <div class="carousel-cell" style="background-image: url(https://itinerandoconale.it/wp-content/uploads/2021/08/Castello-di-Chaumont-Sur-Loire.jpg)"></div>
+                    <div class="carousel-cell" style="background-image: url(https://images7.alphacoders.com/678/678350.jpg)"></div> 
+                    <div class="carousel-cell" style="background-image: url(https://www.gulliverlab.travel/StreamMimeBlobField.svt?mime=image/*&tableName=glab_travel_ideas&fieldName=TRAVEL_IDEA_IMAGE3&pKey=134&expires=864000&inLine=true&outputFile=glab_travelIdea_image3_134.jpg)"></div>
+                    <div class="carousel-cell" style="background-image: url(https://images2.alphacoders.com/661/661013.jpg)"></div>        
+            
+                </div>
+
+                    <p>Chenonceau possiede un'eccezionale collezione museale di dipinti di alcuni grandi maestri: Murillo, 
+                    Tintoretto, Nicolas Poussin, Correggio, oltre a una rarissima selezione di arazzi delle Fiandre del XVI secolo.<br><br>
+                     Al castello di Chenonceau, la fioritura delle stanze, tutte sontuosamente arredate,
+                     aggiunge un tocco supplementare di raffinatezza. Sala delle cinque regine, salone Luigi XIV, grande galleria
+                      sul fiume Cher, sorprendenti cucine costruite nei piloni del ponte, gabinetto verde di Caterina dei 
+                      Medici… Passo dopo passo, Chenonceau ci trasporta attraverso la Storia, i suoi sogni e i suoi segreti.<br><br>
+                    Castello visionario dal Rinascimento all'Illuminismo, Chenonceau si è costantemente nutrito dell’innovazione,
+                     degno erede dei più grandi pensatori e filosofi dell'epoca. I visitatori moderni, provenienti da tutto il mondo,
+                      possono oggi scoprire la qualità della sua accoglienza grazie a una visita libera o con audioguida.</p>
+
+        </div>
+
+
+            <div class="castello_sfondo">
+
+            </div>
+
+
+
+        <div class="bigDiv">
+
+            <div class="wow">
+                <div class="" style="padding: 20px;">
+                    <img src="logo_castello.png" alt="logo del sito">
+                </div>
+
+                <div id="iscrizione" style="padding: 20px; text-align: center;">
+                    <a href="" class="button--move">ISCRIVITI ALLA NEWSLETTER</a>
+                </div>
+            </div>
+
+            <div class="footer">
+
+                <div class="col-footer">informazioni legali</div>
+                <div class="col-footer">Impostazioni privacy</div>
+                <div class="col-footer"> P.IVA 06021213585</div>
+                <div class="col-footer">Termini e condizioni</div>
+
+            </div>
+
+            <div class="owo">
+
+                <p style="padding-bottom: 20px;">Copyright © 2023 CastleClick Inc.</p>
+                <p>Tutti i diritti riservati</p>
+
+            </div>
+   
+
+        <script>
+                // INSERISCO QUESTA STRINGA IN UNO SCRIPT PER INIZIALIZZARE LA LIBRERIA "SCROLL REVEAL"
+                ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 900 });
+        </script>
+    </body>
+</html>
